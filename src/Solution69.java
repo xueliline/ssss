@@ -5,17 +5,18 @@ public class Solution69 {
         while (l<=h)
         {
             int mid=(l+h)/2;
-            int sqrt= (int) Math.sqrt(x);
-            if(sqrt<=mid){
+            int sqrt=x/mid;
+            if(sqrt==mid)
+                return mid;
+            if(sqrt<mid){
                 h=mid-1;
             }
-
-            else if(sqrt>mid)
+            else
             {
                 l=mid+1;
             }
 
         }
-        return l;
+        return h;
      }
 }
