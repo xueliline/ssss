@@ -10,6 +10,6 @@ class Solution35 {
             if(nums[i]>=target)
                 return i;
         }
-        return 1;
+        return nums.length;
     }
 }
