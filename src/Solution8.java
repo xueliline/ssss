@@ -1,4 +1,4 @@
-��;
+
 
 public class Solution8 {
 	  public int myAtoi(String str) {

@@ -9,9 +9,9 @@ public class Solution540 {
             System.out.println(l+"    "+mid);
             if(nums[mid]==nums[mid-1])
                 mid--;
-            if(nums[mid])
-            return nums[mid];
-            if()
+//            if(nums[mid])
+//            return nums[mid];
+//            if()
         }
        return nums[l];
     }
