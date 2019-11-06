@@ -1,8 +1,8 @@
 
 
-public class ListNode {
+public class ListNode<I extends Number> {
     int val;
-     ListNode next;
+     ListNode<Number> next;
      //����
      ListNode(int x) { val = x; }
  }

@@ -1,9 +1,9 @@
 
 
 class Solution2 {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-    	ListNode pre=new ListNode(0);
-    	ListNode cur=pre;
+    public ListNode<Number> addTwoNumbers(ListNode<Number> l1, ListNode<Number> l2) {
+    	ListNode<Number> pre=new ListNode<Number>(0);
+    	ListNode<Number> cur=pre;
     	int carray=0;
     	int x;
     	int y;
@@ -24,7 +24,7 @@ class Solution2 {
 				y=0;
 			}
     		sum=x+y+carray;
-    		cur.next=new ListNode(sum%10);
+    		cur.next=new ListNode<Number>(sum%10);
     		cur=cur.next;
     		carray=sum/10;
     		if(l1!=null)
@@ -39,7 +39,7 @@ class Solution2 {
     	}
     	if(carray==1)
     	{
-    		cur.next=new ListNode(carray);
+    		cur.next=new ListNode<Number>(carray);
     	}
 		return pre.next;
         
