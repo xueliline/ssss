@@ -9,16 +9,16 @@ class Solution27 {
                 index++;
                 nums[index]=nums[pos];
 
-            }else{
-                pos++;
+
             }
+                pos++;
+
         }
     return index+1;
     }
-
-    public static void main(String[] args) {
-        Solution27 solution27=new Solution27();
-        int res=solution27.removeElement(new int []{3,2,2,3},3);
-        System.out.println(res);
-    }
 }
+//  public static void main(String[] args) {
+//        Solution27 solution27=new Solution27();
+//        int res=solution27.removeElement(new int []{3,2,2,3},3);
+//        System.out.println(res);
+//    }
