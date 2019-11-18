@@ -4,5 +4,6 @@ public class Solution1047 {
         StringBuilder builder = new StringBuilder();
         builder.append(11);
         builder.toString();
+        return "";
     }
 }
