@@ -5,9 +5,12 @@ public class Solution61 {
     List<ListNode> list=new ArrayList<>();
 
     public ListNode rotateRight(ListNode head, int k) {
+        if(head==null)
+            return null;
         while (head!=null)
         {
             list.add(head);
+            head=head.next;
         }
         ListNode [] res=new ListNode[list.size()];
         for (int i=0;i<list.size();i++)
